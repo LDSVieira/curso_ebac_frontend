@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    /*reset*/
+    /*devo iniciar todos os arquivos css assim*/
+    /*aqui informei que é a borda (não o conteúdo) é que define o tameanho da "caixa"*/
+    margin: 0;
+    padding: 0;
+}
+
+#whatsapp {
+    position: fixed;
+    /*é a imagem/link do whatsapp fixa na tela*/
+    bottom: 0;
+    right: 0;
+    height: 200px;
+}
+
+h4 {
+    /*estilização dos textos nos artigos (resumo da notícia) que foram usados o h4*/
+    font-weight: normal;
+    /*tipo da letra*/
+    padding-bottom: 5px;
+    /*distância entre o resumo da notícia (h4) e o leia mais*/
+}
+
+header .container {
+    /*esse header é apenas onde está o título do site*/
+    /*aqui é o título do site e os links para as seções*/
+    /*esse código só altera esse container
+pois da forma que está estou informando que é o filho direto de header, os outros deve obedecer outra estilização*/
+    display: flex;
+    /*para ficar um elemento ao lado do outro*/
+    align-items: center;
+    /*alinhamento dos intens*/
+    justify-content: space-between;
+    /*justificar o conteúdo*/
+}
+
+header .container a {
+    text-decoration: none;
+
+}
+
+body>header {
+    /*por usar > estou dizendo que não é qualquer header, eu quero o header filho direto do body.*/
+    /*os outros headers não serão estilizados por serem descedentes mais afastados do body.*/
+    padding: 16px 0;
+}
+
+section {
+    margin: 0px;
+    padding: 16px;
+}
+
+section h2,
+.articles article {
+    /*título de cada seção*/
+    margin-bottom: 16px;
+    /*margem inferior do título da seção para a foto*/
+}
+
+.articles article h3 {
+    /*título de cada notícia*/
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.articles article a {
+    /*botões leia mais*/
+    padding: 8px;
+    /*espaço de 8px entre o texto "leia mais" e a borda do botão*/
+    display: inline-block;
+    /*o texto (que fica parecido com um botão) é apresentado (display) em blocos em linha*/
+    text-decoration: none;
+    /*sem link aparente o tempo todo*/
+    font-weight: 700;
+    /*deixar a fonte em negrito*/
+}
+
+.articles article a:hover {
+    /*a:hover com text decoration underline vai permitir que o botão "leia mais" se transforme num link com a aproximação do mause*/
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+header li {
+    /*os links para as seções foram apresentados em linha*/
+    display: inline;
+    margin-left: 16px;
+    /*distância de 16px entre eles*/
+}
+
+.container {
+    /*todas as seções que estão dentro das div "container" terão largura de 1366px e a margem será definida pelo browser*/
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    width: 100%;
+}
+
+.articles article {
+    width: 45%;
+}
+
+/*seção das cores*/
+#sports {
+    background-color: rgba(3, 105, 3, 0.203);
+}
+
+#economy {
+    background-color: rgba(242, 223, 79, 0.3);
+}
+
+#entertainment {
+    background-color: rgba(6, 30, 245, 0.159);
+}
+
+#technology {
+    background-color: rgba(245, 7, 221, 0.189);
+}
+
+.creation_date {
+    /*estilização das datas abaixo de cada imagem*/
+    color: rgba(168, 163, 173, 0.967)
+}
+
+
+#sports h2 {
+    /*estilização (cor do título) do h2 da seção esportes*/
+    color: #023d02;
+}
+
+#sports h3 {
+    /*estilização (cor do título) do h3 da seção esportes. */
+    color: #023d02;
+}
+
+#economy h2 {
+    /*estilização (cor do texto) do h2 da seção economia*/
+    color: rgb(255, 170, 0);
+}
+
+#economy h3 {
+    /*estilização (cor do texto) do h3 da seção economia. */
+    color: rgb(255, 170, 0)
+}
+
+#entertainment h3,
+h2 {
+    /*estilização (cor do texto) do h2 e h3, de uma só vez, da seção entretenimento*/
+    color: rgb(76, 0, 255);
+}
+
+
+header li a {
+    color: rgb(173, 216, 230);
+}
+
+h4 {
+    color: black;
+    /*cor da fonte*/
+}
+
+#technology h2,
+h3 {
+    /*estilização (cor do texto) do h2 e h3, de uma só vez, da seção tecnologia*/
+    color: rgb(231, 11, 238);
+}
+
+body>header {
+    background-color: rgb(10, 1, 40);
+    color: rgb(173, 216, 230);
+}
+
+section {
+    background-color: white;
+}
+
+.articles article a {
+    color: aliceblue;
+    /*letra do botão é aliceblue */
+}
+
+#sports article a {
+    background-color: rgb(2, 26, 2);
+}
+
+#economy article a {
+    background-color: rgb(125, 115, 42);
+}
+
+#entertainment article a {
+    background-color: rgba(3, 18, 91, 0.873);
+}
+
+#technology article a {
+    background-color: rgb(63, 22, 58)
+}
