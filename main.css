@@ -104,7 +104,7 @@ header li {
 
 .container {
     /*todas as seções que estão dentro das div "container" terão largura de 1366px e a margem será definida pelo browser*/
-    width: 1366px;
+    width: 1100px;
     margin: 0 auto;
 }
 
@@ -115,7 +115,9 @@ header li {
 }
 
 .articles article img {
+    /*aqui trata-se do tamanho das imagens*/
     width: 100%;
+    height: auto;
 }
 
 .articles article {
